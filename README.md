@@ -1,6 +1,6 @@
-# Welcome to happy-dev
+# happy-dev
 
-This application is for tracking the productivity and happiness levels of developers on a daily basis!!!
+An application for tracking the daily, performance, productivity, and happiness of software developers
 
 ## Possible features:
 
