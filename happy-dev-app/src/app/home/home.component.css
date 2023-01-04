@@ -14,3 +14,11 @@ p{
   color: #ffffff;
   font-size: 20px;
 }
+
+.websiteheader {
+  padding: 20px;
+  text-align: center;
+  background: #0f7173;
+  color: #edf7b5;
+  font-size: 20px;
+}
