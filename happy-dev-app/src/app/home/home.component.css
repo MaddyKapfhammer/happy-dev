@@ -1,0 +1,16 @@
+h1{
+  font-size: 40px;
+  color: #df3b57;
+  font-weight: bold;
+}
+
+p{
+  font-size: 20px;
+}
+.header {
+  padding: 50px;
+  text-align: center;
+  background: #ef8354;
+  color: #ffffff;
+  font-size: 20px;
+}
