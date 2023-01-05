@@ -18,6 +18,13 @@ p{
   height: 500px;
 }
 
+.description{
+  background-color: #0f7173;
+  height: 300px;
+  padding: 50px;
+  font-size: 30px;
+}
+
 .footer{
   background-color: #edf7b5;
   overflow: hidden;
@@ -30,9 +37,4 @@ p{
   text-align: left;
 }
 
-.description{
-  background-color: #0f7173;
-  height: 300px;
-  padding: 50px;
-  font-size: 30px;
-}
+
