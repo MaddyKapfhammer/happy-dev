@@ -1,8 +1,16 @@
 # happy-dev
 
-An application for tracking the daily, performance, productivity, and happiness of software developers
+An application for tracking the daily performance, productivity, and happiness of software developers
 
-## Possible features:
+## Running happy-dev's current application
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+
+### Running happy-dev:
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+## Future features:
 
 **Productivity Focused**
 
