@@ -8,7 +8,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ### Running happy-dev:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Clone this repository:
+  - Using ssh: `git clone git@github.com:MaddyKapfhammer/happy-dev.git` 
+  - Using https: `git clone https://github.com/MaddyKapfhammer/happy-dev.git`
+
+2. Navigate to the `happy-dev-app` directory
+
+3. In the `happy-dev-app` directory run `ng serve` for a dev server
+
+4. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Future features:
 
