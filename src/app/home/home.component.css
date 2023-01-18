@@ -3,17 +3,6 @@ body, html{
   background-color: red;
 }
 
-h1{
-  font-size: 40px;
-  color: #df3b57;
-  font-weight: bold;
-}
-
-p{
-  font-size: 20px;
-  text-align: center;
-}
-
 .header {
   padding: 30px;
   text-align: center;
@@ -32,14 +21,3 @@ p{
   height: 200px;
 }
 
-.footer{
-  background-color: #edf7b5;
-  overflow: hidden;
-  padding: 10px;
-  text-align: center;
-  color: #df3b57;
-  font-weight: bold;
-  height: 60px;
-  font-size: 14px;
-  text-align: left;
-}
