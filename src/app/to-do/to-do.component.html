@@ -1,13 +1,41 @@
 
-<div class="header">
-  <h1>
-    To-Do List
-  </h1>
-  <div class="description">
-    Do you work best with checking off a task every time that you complete it? Create your own task to-do list here!
-    Add, modify and complete tasks as your work day goes on!
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500&family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<h1>Check It Off</h1>
+<h2>What do you need to get done today?</h2>
+
+<div class="todo">
+	<div class="list">
+		<input [(ngModel)]="newTask" type="text"
+		value="" class="taskBox">
+		<button (click)="addToList()" class="task-btn">
+			Add Task
+		</button>
+	</div>
+
+  <div class="tasks">
+
+    <div *ngFor="let x of items; let index = index;"
+    class="row mt-1" style="height:100px;">
+
+    <div class="Row">
+      <input (click)="deleteTask(index)" type="checkbox"
+      value="Done" class="done-check">
+
+      <div class="listed-task">{{x}}</div>
+
+      <input (click)="deleteTask(index)" type="button"
+        value="Delete" class="delete-btn">
+      </div>
+    </div>
   </div>
 </div>
+
+
 
 <div class="footer">
   <p>Thanks for visiting happy-dev!</p>

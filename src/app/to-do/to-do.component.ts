@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./to-do.component.css']
 })
 export class ToDoComponent {
+  public items: string[] = [];
+
+  public newTask: any;
+
+  public addToList() {
+    if (this.newTask == ''){
+    }
+    else{
+      this.items.push(this.newTask);
+      this.newTask = '';
+    }
+  }
+
+  public deleteTask(index: any) {
+    this.items.splice(index,1);
+  }
 
 }
