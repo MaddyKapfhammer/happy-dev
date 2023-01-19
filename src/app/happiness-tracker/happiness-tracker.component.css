@@ -1,8 +1,24 @@
+.happiness{
+  text-align: center;
+}
 .quiz{
   background-color: #aef6c7;
   width: 80%;
   border-style:solid;
   text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+}
+
+.done-btn{
+  background-color: #df3b57;
+  font-family: 'Bebas Neue', cursive;
+  height: 50px;
+  width: 120px;
+  margin-top: 20px;
+  font-size: 30px;
 }
 
 
