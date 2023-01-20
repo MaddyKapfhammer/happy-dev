@@ -10,31 +10,110 @@ Have you talked with a coworker about your work tasks today?
 
 # Broken down into 3 categories:
 
-## Relationships (working)
+## Productivity
 
-- How much time/how many times did you spend helping your coworkers today?
-- How many coworkers did you speak to (virtually or in-person) today?
-- I felt supported by my work colleagues today
-- I enjoyed talking about the projects that I was working on today
-- 
+1. How often were you on your phone today?
+
+| never | rarely | sometimes | frequently |
+| :---: | :---: | :---: | :---:|
+|4 | 3|2|1|
+
+2. How often did you spend time on the internet, not relating to work tasks?
+
+| never | rarely | sometimes | frequently |
+| :---: | :---: | :---: | :---:|
+|4 | 3|2|1|
+
+3. I made progress on my project tasks today
+
+| strongly disagree | disagree | agree | strongly agree |
+| :---: | :---: | :---: | :---:|
+|1 | 2|3|4|
+
+4. I perservered in my work today, even when I encountered tasks that I did not know how to complete
+
+| strongly disagree | disagree | agree | strongly agree |
+| :---: | :---: | :---: | :---:|
+|1 | 2|3|4|
+
+5. How often did you feel lost/confused on your current tasks today?
+
+| never | rarely | sometimes | frequently |
+| :---: | :---: | :---: | :---:|
+|4 | 3|2|1|
+
+## Satisfaction 
+
+1. I know what my strengths are regarding the project that I am currently working on
+
+| strongly disagree | disagree | agree | strongly agree |
+| :---: | :---: | :---: | :---:|
+|1 | 2|3|4|
+
+2. I looked forward to starting work today
+
+| strongly disagree | disagree | agree | strongly agree |
+| :---: | :---: | :---: | :---:|
+|1 | 2|3|4|
+
+3. I believe that the project I am working on serves a greater purpose
+
+| strongly disagree | disagree | agree | strongly agree |
+| :---: | :---: | :---: | :---:|
+|1 | 2|3|4|
+
+4. My work today contributed to my personal growth
+
+| strongly disagree | disagree | agree | strongly agree |
+| :---: | :---: | :---: | :---:|
+|1 | 2|3|4|
+
+5. How often did you feel interested in the tasks you were working on for the day?
+
+| never | rarely | sometimes | frequently |
+| :---: | :---: | :---: | :---:|
+|1 | 2|3|4|
+
+6. I find my current project tasks to be engaging and interesting
+
+| strongly disagree | disagree | agree | strongly agree |
+| :---: | :---: | :---: | :---:|
+|1 | 2|3|4|
+
+## Working Relationships
+
+1. How often did you interact with your coworkers today?
+
+| never | rarely | sometimes | frequently |
+| :---: | :---: | :---: | :---:|
+|1 | 2|3|4|
+
+2. How often did you help your coworkers today?
+
+| never | rarely | sometimes | frequently |
+| :---: | :---: | :---: | :---:|
+|1 | 2|3|4|
+
+3. I felt supported by my work colleagues today
+
+| strongly disagree | disagree | agree | strongly agree |
+| :---: | :---: | :---: | :---:|
+|1 | 2|3|4|
+
+4. I enjoyed talking with my coworkers about my project tasks today
+
+| strongly disagree | disagree | agree | strongly agree |
+| :---: | :---: | :---: | :---:|
+|1 | 2|3|4|
+
+5. How often did you ask your coworkers for help on tasks that you did not understand today?
+
+| never | rarely | sometimes | frequently |
+| :---: | :---: | :---: | :---:|
+|1 | 2|3|4|
 
 
 
-## Productivity 
 
-- How often were you on your phone today?
-- How many times did you go on social media during the work day today?
-- How much time do you spend feeling lost/confused on your current tasks?
-- I perservered today, even when I encountered tasks that I did not know how to complete
-- I made progress on my project today
-- 
 
-## Satisfaction (with work)
-
-- I know what my strengths are regarding the project that I am currently working on
-- I looked forward to starting work today
-- I believe that the project I am working on serves a greater purpose
-- My work today contributed to my personal growth 
-- The project I am working on fits with my personal values and beliefs
-- The tasks I am currently working on are in line with what I want to be doing
 
