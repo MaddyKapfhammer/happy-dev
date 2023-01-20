@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class ToDoComponent {
   public items: string[] = [];
 
-  public newTask: any;
+  public newTask!: string;
 
   public addToList() {
     if (this.newTask == ''){
