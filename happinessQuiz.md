@@ -112,8 +112,19 @@ Have you talked with a coworker about your work tasks today?
 | :---: | :---: | :---: | :---:|
 |1 | 2|3|4|
 
+# Scoring
 
+Higher score = higher "happiness level"
 
+## Method of scoring
 
+- Add up values for each question answered
+- Values broken up into 3 categories: _Productivity_, _Satisfaction_, _Working Relationships_
+- Scores added in each category
+- Category scores are added together, and divided by 3 (mean is determined)
 
+## Reporting scores
 
+Scores are reported for each category breakdown, as well as overall
+
+**Quiz is intended to be taken daily to compare scores day by day, week by week**
