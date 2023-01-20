@@ -19,7 +19,7 @@ export class ToDoComponent {
     }
   }
 
-  public deleteTask(index: any) {
+  public deleteTask(index: number) {
     this.items.splice(index,1);
   }
 
