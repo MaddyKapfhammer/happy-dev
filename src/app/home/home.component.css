@@ -1,15 +1,12 @@
 .homePage{
   width: 80%;
   font-family: "Nunito Sans", sans-serif;
-  text-align: center;
-  background-color: #ef8354;
-}
-
-.description{
   background-color: #aef6c7;
-  display: inline-block;
-  margin: 0 auto;
-  text-align: center;
+  position: relative;
+  margin: auto;
   font-size: 20px;
+  text-align: center;
+  padding: 20px;
   border-style: solid;
+
 }
