@@ -1,45 +1,12 @@
-body, html{
-  margin: 0px;
-  background-color: red;
-}
-
-h1{
-  font-size: 40px;
-  color: #df3b57;
-  font-weight: bold;
-}
-
-p{
+.homePage{
+  width: 80%;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #aef6c7;
+  position: relative;
+  margin: auto;
   font-size: 20px;
   text-align: center;
-}
+  padding: 20px;
+  border-style: solid;
 
-.header {
-  padding: 30px;
-  text-align: center;
-  background: #ef8354;
-  color: #ffffff;
-  font-size: 30px;
-  height: 500px;
-}
-
-.websiteheader {
-  padding: 10px;
-  text-align: center;
-  background: #0f7173;
-  color: #edf7b5;
-  font-size: 40px;
-  height: 200px;
-}
-
-.footer{
-  background-color: #edf7b5;
-  overflow: hidden;
-  padding: 10px;
-  text-align: center;
-  color: #df3b57;
-  font-weight: bold;
-  height: 60px;
-  font-size: 14px;
-  text-align: left;
 }
