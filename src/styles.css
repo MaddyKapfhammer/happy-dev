@@ -4,8 +4,8 @@ h1{
   background-color: #0f7173;
   color: #edf7b5;
   padding: 20px;
-  /* height: 150px; */
   text-align: center;
+  margin-top: 0px;
   margin-top: 0px;
   margin-bottom: 6px;
 }
@@ -31,6 +31,8 @@ h3{
   margin-top: 8px;
   margin-bottom: 0px;
 }
+
+
 
 .footer{
   position: fixed;
