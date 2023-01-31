@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule } from '@angular/forms'
+import {FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { TimeTrackerComponent } from './time-tracker/time-tracker.component';
@@ -20,7 +20,8 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

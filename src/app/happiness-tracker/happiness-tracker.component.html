@@ -9,175 +9,178 @@
 
   <h2>Take our daily happiness quiz to determine how satisified you are as a developer</h2>
 
-  <form class="quiz">
-    <h3>Productivity</h3>
-    <p>How often were you on your phone today?</p>
-    <input type="radio" id="never" name="productivity_1">
-    <label for="never">never</label>
-    <input type="radio" id="rarely" name="productivity_1">
-    <label for="rarelt">rarely</label>
-    <input type="radio" id="sometimes" name="productivity_1">
-    <label for="sometimes">sometimes</label>
-    <input type="radio" id="frequently" name="productivity_1">
-    <label for="frequently">frequently</label>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="form-group">
+      <div class="productivityQuestions">
+      <h3>Productivity</h3>
+      <label for="productivity1"><p>How often were you on your phone today?</p></label>
+        <input id="never" type="radio" value="never" name="productivity1" formControlName="productivity1">
+        <label for="never">never</label>
+        <input id="rarely" type="radio" value="rarely" name="productivity1" formControlName="productivity1">
+        <label for="rarely">rarely</label>
+        <input id="sometimes" type="radio" value="sometimes" name="productivity1" formControlName="productivity1">
+        <label for="sometimes">sometimes</label>
+        <input id="frequently" type="radio" value="frequently" name="productivity1" formControlName="productivity1">
+        <label for="frequently">frequently</label>
 
-    <p>How often did you spend time on the internet, not relating to work tasks?</p>
-    <input type="radio" id="never" name="productivity_2">
-    <label for="never">never</label>
-    <input type="radio" id="rarely" name="productivity_2">
-    <label for="rarely">rarely</label>
-    <input type="radio" id="sometimes" name="productivity_2">
-    <label for="sometimes">sometimes</label>
-    <input type="radio" id="frequently" name="productivity_2">
-    <label for="frequently">frequently</label>
+      <label for="productivity2"><p>How often did you spend time on the internet, not relating to work tasks?</p></label>
+        <input id="never" type="radio" value="never" name="productivity2" formControlName="productivity2">
+        <label for="never">never</label>
+        <input id="rarely" type="radio" value="rarely" name="productivity2" formControlName="productivity2">
+        <label for="rarely">rarely</label>
+        <input id="sometimes" type="radio" value="sometimes" name="productivity2" formControlName="productivity2">
+        <label for="sometimes">sometimes</label>
+        <input id="frequently" type="radio" value="frequently" name="productivity2" formControlName="productivity2">
+        <label for="frequently">frequently</label>
 
-    <p>I made progress on my project tasks today</p>
-    <input type="radio" id="stronglyDisagree" name="productivity_3">
-    <label for="stronglyDisagree">strongly disagree</label>
-    <input type="radio" id="disagree" name="productivity_3">
-    <label for="disagree">disagree</label>
-    <input type="radio" id="agree" name="productivity_3">
-    <label for="agree">agree</label>
-    <input type="radio" id="stronglyAgree" name="productivity_3">
-    <label for="stronglyAgree">strongly agree</label>
+      <label for="productivity3"><p>I made progress on my project tasks today</p></label>
+        <input id="stronglyDisagree" type="radio" value="stronglyDisagree" name="productivity3" formControlName="productivity3">
+        <label for="stronglyDisagree">strongly disagree</label>
+        <input id="disagree" type="radio" value="disagree" name="productivity3" formControlName="productivity3">
+        <label for="disagree">disagree</label>
+        <input id="agree" type="radio" value="agree" name="productivity3" formControlName="productivity3">
+        <label for="agree">agree</label>
+        <input id="stronglyAgree" type="radio" value="stronglyAgree" name="productivity3" formControlName="productivity3">
+        <label for="stronglyAgree">strongly agree</label>
 
-    <p>I perservered in my work today, even when I encountered tasks that I did not know how to complete</p>
-    <input type="radio" id="stronglyDisagree" name="productivity_4">
-    <label for="stronglyDisagree">strongly disagree</label>
-    <input type="radio" id="disagree" name="productivity_4">
-    <label for="disagree">disagree</label>
-    <input type="radio" id="agree" name="productivity_4">
-    <label for="agree">agree</label>
-    <input type="radio" id="stronglyAgree" name="productivity_4">
-    <label for="stronglyAgree">strongly agree</label>
+      <label for="productivity4"><p>I perservered in my work today, even when I encountered tasks that I did not know how to complete</p></label>
+        <input id="stronglyDisagree" type="radio" value="stronglyDisagree" name="productivity4" formControlName="productivity4">
+        <label for="stronglyDisagree">strongly disagree</label>
+        <input id="disagree" type="radio" value="disagree" name="productivity4" formControlName="productivity4">
+        <label for="disagree">disagree</label>
+        <input id="agree" type="radio" value="agree" name="productivity4" formControlName="productivity4">
+        <label for="agree">agree</label>
+        <input id="stronglyAgree" type="radio" value="stronglyAgree" name="productivity4" formControlName="productivity4">
+        <label for="stronglyAgree">strongly agree</label>
 
-    <p>How often did you feel lost/confused on your current tasks today?</p>
-    <input type="radio" id="never" name="productivity_5">
-    <label for="never">never</label>
-    <input type="radio" id="rarely" name="productivity_5">
-    <label for="rarely">rarely</label>
-    <input type="radio" id="sometimes" name="productivity_5">
-    <label for="sometimes">sometimes</label>
-    <input type="radio" id="frequently" name="productivity_5">
-    <label for="frequently">frequently</label>
+      <label for="productivity5"><p>How often did you feel lost/confused on your current tasks today?</p></label>
+        <input id="never" type="radio" value="never" name="productivity5" formControlName="productivity5">
+        <label for="never">never</label>
+        <input id="rarely" type="radio" value="rarely" name="productivity5" formControlName="productivity5">
+        <label for="rarely">rarely</label>
+        <input id="sometimes" type="radio" value="sometimes" name="productivity5" formControlName="productivity5">
+        <label for="sometimes">sometimes</label>
+        <input id="frequently" type="radio" value="frequently" name="productivity5" formControlName="productivity5">
+        <label for="frequently">frequently</label>
+      </div>
 
-    <h3>Satisfaction</h3>
-    <p>I know what my strengths are regarding the project that I am currently working on</p>
-    <input type="radio" id="stronglyDisagree" name="satisfaction_1">
-    <label for="stronglyDisagree">strongly disagree</label>
-    <input type="radio" id="disagree" name="satisfaction_1">
-    <label for="disagree">disagree</label>
-    <input type="radio" id="agree" name="satisfaction_1">
-    <label for="agree">agree</label>
-    <input type="radio" id="stronglyAgree" name="satisfaction_1">
-    <label for="stronglyAgree">strongly agree</label>
+      <div class="satisfactionQuestions">
+      <h3>Satisfaction</h3>
+      <label for="satisfaction1"><p>I know what my strengths are regarding the project that I am currently working on</p></label>
+        <input id="stronglyDisagree" type="radio" value="stronglyDisagree" name="satisfaction1" formControlName="satisfaction1">
+        <label for="stronglyDisagree">strongly disagree</label>
+        <input id="disagree" type="radio" value="disagree" name="satisfaction1" formControlName="satisfaction1">
+        <label for="disagree">disagree</label>
+        <input id="agree" type="radio" value="agree" name="satisfaction1" formControlName="satisfaction1">
+        <label for="agree">agree</label>
+        <input id="stronglyAgree" type="radio" value="stronglyAgree" name="satisfaction1" formControlName="satisfaction1">
+        <label for="stronglyAgree">strongly agree</label>
 
-    <p>I looked forward to starting work today</p>
-    <input type="radio" id="stronglyDisagree" name="satisfaction_2">
-    <label for="stronglyDisagree">strongly disagree</label>
-    <input type="radio" id="disagree" name="satisfaction_2">
-    <label for="disagree">disagree</label>
-    <input type="radio" id="agree" name="satisfaction_2">
-    <label for="agree">agree</label>
-    <input type="radio" id="stronglyAgree" name="satisfaction_2">
-    <label for="stronglyAgree">strongly agree</label>
+      <label for="satisfaction2"><p>I looked forward to starting work today</p></label>
+        <input id="stronglyDisagree" type="radio" value="stronglyDisagree" name="satisfaction2" formControlName="satisfaction2">
+        <label for="stronglyDisagree">strongly disagree</label>
+        <input id="disagree" type="radio" value="disagree" name="satisfaction2" formControlName="satisfaction2">
+        <label for="disagree">disagree</label>
+        <input id="agree" type="radio" value="agree" name="satisfaction2" formControlName="satisfaction2">
+        <label for="agree">agree</label>
+        <input id="stronglyAgree" type="radio" value="stronglyAgree" name="satisfaction2" formControlName="satisfaction2">
+        <label for="stronglyAgree">strongly agree</label>
 
-    <p>I believe that the project I am working on serves a greater purpose</p>
-    <input type="radio" id="stronglyDisagree" name="satisfaction_3">
-    <label for="stronglyDisagree">strongly disagree</label>
-    <input type="radio" id="disagree" name="satisfaction_3">
-    <label for="disagree">disagree</label>
-    <input type="radio" id="agree" name="satisfaction_3">
-    <label for="agree">agree</label>
-    <input type="radio" id="stronglyAgree" name="satisfaction_3">
-    <label for="stronglyAgree">strongly agree</label>
+      <label for="satisfaction3"><p>I believe that the project I am working on serves a greater purpose</p></label>
+        <input id="stronglyDisagree" type="radio" value="stronglyDisagree" name="satisfaction3" formControlName="satisfaction3">
+        <label for="stronglyDisagree">strongly disagree</label>
+        <input id="disagree" type="radio" value="disagree" name="satisfaction3" formControlName="satisfaction3">
+        <label for="disagree">disagree</label>
+        <input id="agree" type="radio" value="agree" name="satisfaction3" formControlName="satisfaction3">
+        <label for="agree">agree</label>
+        <input id="stronglyAgree" type="radio" value="stronglyAgree" name="satisfaction3" formControlName="satisfaction3">
+        <label for="stronglyAgree">strongly agree</label>
 
-    <p>My work today contributed to my personal growth</p>
-    <input type="radio" id="stronglyDisagree" name="satisfaction_4">
-    <label for="stronglyDisagree">strongly disagree</label>
-    <input type="radio" id="disagree" name="satisfaction_4">
-    <label for="disagree">disagree</label>
-    <input type="radio" id="agree" name="satisfaction_4">
-    <label for="agree">agree</label>
-    <input type="radio" id="stronglyAgree" name="satisfaction_4">
-    <label for="stronglyAgree">strongly agree</label>
+      <label for="satisfaction4"><p>My work today contributed to my personal growth</p></label>
+        <input id="stronglyDisagree" type="radio" value="stronglyDisagree" name="satisfaction4" formControlName="satisfaction4">
+        <label for="stronglyDisagree">strongly disagree</label>
+        <input id="disagree" type="radio" value="disagree" name="satisfaction4" formControlName="satisfaction4">
+        <label for="disagree">disagree</label>
+        <input id="agree" type="radio" value="agree" name="satisfaction4" formControlName="satisfaction4">
+        <label for="agree">agree</label>
+        <input id="stronglyAgree" type="radio" value="stronglyAgree" name="satisfaction4" formControlName="satisfaction4">
+        <label for="stronglyAgree">strongly agree</label>
 
-    <p>How often did you feel interested in the tasks you were working on for the day?</p>
-    <input type="radio" id="never" name="satisfaction_5">
-    <label for="never">never</label>
-    <input type="radio" id="rarely" name="satisfaction_5">
-    <label for="rarely">rarely</label>
-    <input type="radio" id="sometimes" name="satisfaction_5">
-    <label for="sometimes">sometimes</label>
-    <input type="radio" id="frequently" name="satisfaction_5">
-    <label for="frequently">frequently</label>
+      <label for="satisfaction5"><p>How often did you feel interested in the tasks you were working on for the day?</p></label>
+        <input id="never" type="radio" value="never" name="satisfaction5" formControlName="satisfaction5">
+        <label for="never">never</label>
+        <input id="rarely" type="radio" value="rarely" name="satisfaction5" formControlName="satisfaction5">
+        <label for="rarely">rarely</label>
+        <input id="sometimes" type="radio" value="sometimes" name="satisfaction5" formControlName="satisfaction5">
+        <label for="sometimes">sometimes</label>
+        <input id="frequently" type="radio" value="frequently" name="satisfaction5" formControlName="satisfaction5">
+        <label for="frequently">frequently</label>
 
-    <p>I find my current project tasks to be engaging and interesting</p>
-    <input type="radio" id="stronglyDisagree" name="satisfaction_6">
-    <label for="stronglyDisagree">strongly disagree</label>
-    <input type="radio" id="disagree" name="satisfaction_6">
-    <label for="disagree">disagree</label>
-    <input type="radio" id="agree" name="satisfaction_6">
-    <label for="agree">agree</label>
-    <input type="radio" id="stronglyAgree" name="satisfaction_6">
-    <label for="stronglyAgree">strongly agree</label>
+      <label for="satisfaction6"><p>I find my current project tasks to be engaging and interesting</p></label>
+        <input id="stronglyDisagree" type="radio" value="stronglyDisagree" name="satisfaction6" formControlName="satisfaction6">
+        <label for="stronglyDisagree">strongly disagree</label>
+        <input id="disagree" type="radio" value="disagree" name="satisfaction6" formControlName="satisfaction6">
+        <label for="disagree">disagree</label>
+        <input id="agree" type="radio" value="agree" name="satisfaction6" formControlName="satisfaction6">
+        <label for="agree">agree</label>
+        <input id="stronglyAgree" type="radio" value="stronglyAgree" name="satisfaction6" formControlName="satisfaction6">
+        <label for="stronglyAgree">strongly agree</label>
+      </div>
 
-    <h3>Working Relationships</h3>
-    <p>How often did you interact with your coworkers today?</p>
-    <input type="radio" id="never" name="relationship_1">
-    <label for="never">never</label>
-    <input type="radio" id="rarely" name="relationship_1">
-    <label for="rarely">rarely</label>
-    <input type="radio" id="sometimes" name="relationship_1">
-    <label for="sometimes">sometimes</label>
-    <input type="radio" id="frequently" name="relationship_1">
-    <label for="frequently">frequently</label>
+      <div class="relationshipQuestions">
+        <h3>Working Relationships</h3>
+        <label for="relationship1"><p>How often did you interact with your coworkers today?</p></label>
+          <input id="never" type="radio" value="never" name="relationship1" formControlName="relationship1">
+          <label for="never">never</label>
+          <input id="rarely" type="radio" value="rarely" name="relationship1" formControlName="relationship1">
+          <label for="rarely">rarely</label>
+          <input id="sometimes" type="radio" value="sometimes" name="relationship1" formControlName="relationship1">
+          <label for="sometimes">sometimes</label>
+          <input id="frequently" type="radio" value="frequently" name="relationship1" formControlName="relationship1">
+          <label for="frequently">frequently</label>
 
-    <p>How often did you help your coworkers today?</p>
-    <input type="radio" id="never" name="relationship_2">
-    <label for="never">never</label>
-    <input type="radio" id="rarely" name="relationship_2">
-    <label for="rarely">rarely</label>
-    <input type="radio" id="sometimes" name="relationship_2">
-    <label for="sometimes">sometimes</label>
-    <input type="radio" id="frequently" name="relationship_2">
-    <label for="frequently">frequently</label>
+        <label for="relationship2"><p>How often did you help your coworkers today?</p></label>
+          <input id="never" type="radio" value="never" name="relationship2" formControlName="relationship2">
+          <label for="never">never</label>
+          <input id="rarely" type="radio" value="rarely" name="relationship2" formControlName="relationship2">
+          <label for="rarely">rarely</label>
+          <input id="sometimes" type="radio" value="sometimes" name="relationship2" formControlName="relationship2">
+          <label for="sometimes">sometimes</label>
+          <input id="frequently" type="radio" value="frequently" name="relationship2" formControlName="relationship2">
+          <label for="frequently">frequently</label>
 
-    <p>I felt supported by my work colleagues today</p>
-    <input type="radio" id="never" name="relationship_3">
-    <label for="never">strongly disagree</label>
-    <input type="radio" id="rarely" name="relationship_3">
-    <label for="rarely">disagree</label>
-    <input type="radio" id="sometimes" name="relationship_3">
-    <label for="sometimes">agree</label>
-    <input type="radio" id="frequently" name="relationship_3">
-    <label for="frequently">strongly agree</label>
+        <label for="relationship3"><p>I felt supported by my work colleagues today</p></label>
+          <input id="stronglyDisagree" type="radio" value="stronglyDisagree" name="relationship3" formControlName="relationship3">
+          <label for="stronglyDisagree">strongly disagree</label>
+          <input id="disagree" type="radio" value="disagree" name="relationship3" formControlName="relationship3">
+          <label for="disagree">disagree</label>
+          <input id="agree" type="radio" value="agree" name="relationship3" formControlName="relationship3">
+          <label for="agree">agree</label>
+          <input id="stronglyAgree" type="radio" value="stronglyAgree" name="relationship3" formControlName="relationship3">
+          <label for="stronglyAgree">strongly agree</label>
 
-    <p>I enjoyed talking with my coworkers about my project tasks today</p>
-    <input type="radio" id="stronglyDisagree" name="relationship_4">
-    <label for="stronglyDisagree">strongly disagree</label>
-    <input type="radio" id="disagree" name="relationship_4">
-    <label for="disagree">disagree</label>
-    <input type="radio" id="agree" name="relationship_4">
-    <label for="agree">agree</label>
-    <input type="radio" id="stronglyAgree" name="relationship_4">
-    <label for="stronglyAgree">strongly agree</label>
+        <label for="relationship4"><p>I enjoyed talking with my coworkers about my project tasks today</p></label>
+          <input id="stronglyDisagree" type="radio" value="stronglyDisagree" name="relationship4" formControlName="relationship4">
+          <label for="stronglyDisagree">strongly disagree</label>
+          <input id="disagree" type="radio" value="disagree" name="relationship4" formControlName="relationship4">
+          <label for="disagree">disagree</label>
+          <input id="agree" type="radio" value="agree" name="relationship4" formControlName="relationship4">
+          <label for="agree">agree</label>
+          <input id="stronglyAgree" type="radio" value="stronglyAgree" name="relationship4" formControlName="relationship4">
+          <label for="stronglyAgree">strongly agree</label>
 
-    <p>How often did you ask your coworkers for help on tasks that you did not understand?</p>
-    <input type="radio" id="never" name="relationship_5">
-    <label for="never">never</label>
-    <input type="radio" id="rarely" name="relationship_5">
-    <label for="rarely">rarely</label>
-    <input type="radio" id="sometimes" name="relationship_5">
-    <label for="sometimes">sometimes</label>
-    <input type="radio" id="frequently" name="relationship_5">
-    <label for="frequently">frequently</label>
+        <label for="relationship5"><p>How often did you help your coworkers today?</p></label>
+          <input id="never" type="radio" value="never" name="relationship5" formControlName="relationship5">
+          <label for="never">never</label>
+          <input id="rarely" type="radio" value="rarely" name="relationship5" formControlName="relationship5">
+          <label for="rarely">rarely</label>
+          <input id="sometimes" type="radio" value="sometimes" name="relationship5" formControlName="relationship5">
+          <label for="sometimes">sometimes</label>
+          <input id="frequently" type="radio" value="frequently" name="relationship5" formControlName="relationship5">
+          <label for="frequently">frequently</label>
+      </div>
 
-    <br>
-
-    <button class="done-btn">
-			Done
-		</button>
+      <button class="done-btn" type="submit" [disabled]="!form.valid">Submit</button>
+    </div>
   </form>
-
 </div>
