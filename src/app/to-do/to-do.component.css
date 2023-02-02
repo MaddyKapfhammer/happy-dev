@@ -52,9 +52,17 @@
   margin-bottom: 8px;
 }
 
+.priorityLabel{
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
 .priority{
   font-family: 'Montserrat', sans-serif;
-  margin-left: 8px;
+  width: 80px;
+  height: 20px;
+  font-size: 16px;
 }
 
 .tasks{

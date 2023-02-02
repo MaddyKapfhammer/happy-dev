@@ -11,8 +11,8 @@
 	<form [formGroup]="todoList" (ngSubmit)="onSubmit()" class="list">
     <input type="text" id="task" name="task" formControlName="task" placeholder="task" class="taskBox">
     <input type="text" id="timeEstimation" name="timeEstimation" formControlName="timeEstimation" placeholder="time estimate" class="timeBox" >
-    <label for="priority">Priority:</label>
-    <select name="priority" id="priority" formControlName="priority">
+    <label for="priority" class="priorityLabel">Priority:</label>
+    <select name="priority" id="priority" formControlName="priority" class="priority">
       <option value="high">High</option>
       <option value="low">Low</option>
     </select>
