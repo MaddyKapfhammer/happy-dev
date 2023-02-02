@@ -8,15 +8,28 @@
 <h2>What do you need to get done today?</h2>
 
 <div class="todo">
-	<div class="list">
-		<input [(ngModel)]="newTask" type="text"
+	<form [formGroup]="todoList" (ngSubmit)="onSubmit()" class="list">
+    <input type="text" id="task" name="task" formControlName="task" placeholder="task" class="taskBox">
+    <input type="text" id="timeEstimation" name="timeEstimation" formControlName="timeEstimation" placeholder="time estimate" class="timeBox" >
+    <label for="priority">Priority:</label>
+    <select name="priority" id="priority" formControlName="priority">
+      <option value="high">High</option>
+      <option value="low">Low</option>
+    </select>
+    <br>
+    <button class="task-btn">Add Task</button>
+
+
+
+
+		<!-- <input [(ngModel)]="newTask" type="text"
 		value="" class="taskBox">
 		<button (click)="addToList()" class="task-btn">
 			Add Task
-		</button>
-	</div>
+		</button> -->
+	</form>
 
-  <div class="tasks">
+  <!-- <div class="tasks">
 
     <div *ngFor="let x of items; let index = index;"
     class="row mt-1" style="height:100px;">
@@ -31,7 +44,7 @@
         value="Delete" class="delete-btn">
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 
