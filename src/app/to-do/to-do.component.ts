@@ -22,6 +22,10 @@ export class ToDoComponent {
     });
   }
 
+  public deleteTask(index: number) {
+    this.taskList.splice(index,1);
+  }
+
   onSubmit(){
     console.log(this.todoList.value);
     this.task = this.todoList.get('task')?.value;
@@ -30,28 +34,4 @@ export class ToDoComponent {
     this.timeEstimation = this.todoList.get('task')?.value;
     this.priority = this.todoList.get('task')?.value;
   }
-  // public items: string[] = [];
-
-  // public newTask!: string;
-
-  // public addToList() {
-  //   if (this.newTask == ''){
-  //   }
-  //   else{
-  //     this.items.push(this.newTask);
-  //     this.newTask = '';
-  //   }
-  // }
-
-  public deleteTask(index: number) {
-    this.taskList.splice(index,1);
-  }
-
-  // todoList = new FormGroup({
-  //   task: new FormControl(),
-  //   timeEstimation: new FormControl(),
-  //   priority: new FormControl()
-  // })
-
-
 }
