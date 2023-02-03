@@ -43,9 +43,9 @@ export class ToDoComponent {
   //   }
   // }
 
-  // public deleteTask(index: number) {
-  //   this.items.splice(index,1);
-  // }
+  public deleteTask(index: number) {
+    this.taskList.splice(index,1);
+  }
 
   // todoList = new FormGroup({
   //   task: new FormControl(),
