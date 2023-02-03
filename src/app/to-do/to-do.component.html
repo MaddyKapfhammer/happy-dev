@@ -10,6 +10,7 @@
 <div class="todo">
 	<form [formGroup]="todoList" (ngSubmit)="onSubmit()" class="list">
     <input type="text" id="task" name="task" formControlName="task" placeholder="task" class="taskBox">
+    <br>
     <input type="text" id="timeEstimation" name="timeEstimation" formControlName="timeEstimation" placeholder="time estimate" class="timeBox" >
     <label for="priority" class="priorityLabel">Priority:</label>
     <select name="priority" id="priority" formControlName="priority" class="priority">
@@ -18,36 +19,24 @@
     </select>
     <br>
     <button class="task-btn">Add Task</button>
-
-
-
-
-		<!-- <input [(ngModel)]="newTask" type="text"
-		value="" class="taskBox">
-		<button (click)="addToList()" class="task-btn">
-			Add Task
-		</button> -->
 	</form>
 
-  <!-- <div class="tasks">
-
-    <div *ngFor="let x of items; let index = index;"
-    class="row mt-1" style="height:100px;">
-
+  <div class="tasks">
     <div class="Row">
-      <input (click)="deleteTask(index)" type="checkbox"
-      value="Done" class="done-check">
-
-      <div class="listed-task">{{x}}</div>
-
-      <input (click)="deleteTask(index)" type="button"
-        value="Delete" class="delete-btn">
+      <!-- <div class="listed-task">{{task}}</div> -->
+      <div *ngFor="let x of taskList; let index=index;"
+      class="row mt-1" style="height:100px;">
+        <div class="Row">
+          <input type="checkbox" value="Done" class="done-check">
+          <div class="listedTask">{{x}}</div>
+          <button class="taskCheckIn">check-in</button>
+          <button class="taskCheckOut">check-out</button>
+          <button class="delete-btn">Delete</button>
+        </div>
       </div>
     </div>
-  </div> -->
+  </div>
 </div>
-
-
 
 <div class="footer">
   <p>Thanks for visiting happy-dev!</p>
