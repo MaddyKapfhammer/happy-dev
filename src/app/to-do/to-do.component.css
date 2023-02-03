@@ -102,6 +102,30 @@
   font-size: 30px;
 }
 
+.taskCheckIn{
+  background-color: black;
+  font-family: 'Bebas Neue', cursive;
+  color: #edf7b5;
+  margin-top: 6px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 30px;
+  width: 80px;
+  float: left;
+}
+
+.taskCheckOut{
+  background-color: black;
+  font-family: 'Bebas Neue', cursive;
+  color: #edf7b5;
+  margin-top: 6px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 30px;
+  width: 80px;
+  float: left;
+}
+
 .row{
   padding: 10px;
 }
