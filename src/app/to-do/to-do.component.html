@@ -28,8 +28,9 @@
         <div class="Row">
           <input type="checkbox" (click)="deleteTask(index)" value="Done" class="done-check">
           <div class="listed-task">{{x}}</div>
-          <button class="taskCheckIn">check-in</button>
-          <button class="taskCheckOut">check-out</button>
+          <button class="taskCheckIn" (click)="startTimer()">{{startText}}</button>
+          <div *ngIf="counter; else elseBlock">{{timeText}}</div>
+          <ng-template #elseBlock></ng-template>
           <button class="delete-btn" (click)="deleteTask(index)">Delete</button>
         </div>
       </div>
