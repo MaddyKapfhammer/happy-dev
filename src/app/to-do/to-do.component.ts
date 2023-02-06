@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import {NgModule} from '@angular/core';
 
 
@@ -14,11 +14,14 @@ export class ToDoComponent {
   timeEstimation: Number = 0;
   priority: string = '';
   taskList: string[] = [];
-  counter: undefined | number = 0;
+  counter: number = 0;
   timerRef: any;
   running: boolean = false;
-  startText: string = 'Check-In';
   timeText: string = '';
+  timeList: string[] = [];
+  timeListNums: number[] = [];
+  buttonTextList: string[] = Array(30).fill('Check-In');
+  counterList: number[] = Array(30).fill(0);
 
   constructor(private fb:FormBuilder){
     this.todoList = this.fb.group({
@@ -48,22 +51,47 @@ export class ToDoComponent {
     return hours + ':' + minutes + ':' + seconds;
   }
 
-  startTimer(){
+  // startTimer(index: number){
+  //   this.running = !this.running;
+  //   this.buttonTextList[index] = 'Check-In';
+  //   if(this.running){
+  //     const startTime = Date.now() - (this.counter || 0);
+  //     this.timerRef = setInterval(() => {
+  //       this.counter = Date.now() - startTime;
+  //       this.timeText = this.timeConverter(this.counter);
+  //       this.timeList[index] = this.timeText;
+  //       this.buttonTextList[index] = 'Check-Out';
+  //     });
+  //     this.timeListNums[index] = this.counter;
+  //     console.log(this.timeListNums);
+  //   } else{
+  //     this.buttonTextList[index] = 'Check-In';
+  //     clearInterval(this.timerRef);
+  //   }
+  // }
+
+  startTimer(index: number){
     this.running = !this.running;
+    this.buttonTextList[index] = 'Check-In';
     if(this.running){
-      this.startText = 'Check-Out';
-      const startTime = Date.now() - (this.counter || 0);
+      var counter = this.counterList[index];
+      this.timeListNums[index] = counter;
+      const startTime = Date.now() - (counter || 0);
       this.timerRef = setInterval(() => {
-        this.counter = Date.now() - startTime;
-        this.timeText = this.timeConverter(this.counter);
+        counter = Date.now() - startTime;
+        this.counterList[index] = counter;
+        this.timeText = this.timeConverter(counter);
+        this.timeList[index] = this.timeText;
+        console.log(index + ": " + this.timeList[index]);
+        this.buttonTextList[index] = 'Check-Out';
       });
     } else{
-      this.startText = 'Check-In';
+      this.buttonTextList[index] = 'Check-In';
       clearInterval(this.timerRef);
     }
   }
 
-  // ngOnDestroy(){
-  //   clearInterval(this.timerRef);
-  // }
+  ngOnDestroy(){
+    clearInterval(this.timerRef);
+  }
 }
