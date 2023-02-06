@@ -36,10 +36,8 @@ export class ToDoComponent {
   }
 
   onSubmit(){
-    console.log(this.todoList.value);
     this.task = this.todoList.get('task')?.value;
     this.taskList.push(this.task);
-    console.log(this.taskList);
     this.timeEstimation = this.todoList.get('task')?.value;
     this.priority = this.todoList.get('task')?.value;
   }
@@ -50,25 +48,6 @@ export class ToDoComponent {
     var seconds = Math.round(milliseconds/1000)
     return hours + ':' + minutes + ':' + seconds;
   }
-
-  // startTimer(index: number){
-  //   this.running = !this.running;
-  //   this.buttonTextList[index] = 'Check-In';
-  //   if(this.running){
-  //     const startTime = Date.now() - (this.counter || 0);
-  //     this.timerRef = setInterval(() => {
-  //       this.counter = Date.now() - startTime;
-  //       this.timeText = this.timeConverter(this.counter);
-  //       this.timeList[index] = this.timeText;
-  //       this.buttonTextList[index] = 'Check-Out';
-  //     });
-  //     this.timeListNums[index] = this.counter;
-  //     console.log(this.timeListNums);
-  //   } else{
-  //     this.buttonTextList[index] = 'Check-In';
-  //     clearInterval(this.timerRef);
-  //   }
-  // }
 
   startTimer(index: number){
     this.running = !this.running;
@@ -82,7 +61,6 @@ export class ToDoComponent {
         this.counterList[index] = counter;
         this.timeText = this.timeConverter(counter);
         this.timeList[index] = this.timeText;
-        console.log(index + ": " + this.timeList[index]);
         this.buttonTextList[index] = 'Check-Out';
       });
     } else{
