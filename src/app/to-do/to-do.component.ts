@@ -19,7 +19,6 @@ export class ToDoComponent {
   running: boolean = false;
   timeText: string = '';
   timeList: string[] = [];
-  timeListNums: number[] = [];
   buttonTextList: string[] = Array(30).fill('Check-In');
   counterList: number[] = Array(30).fill(0);
 
@@ -33,6 +32,9 @@ export class ToDoComponent {
 
   public deleteTask(index: number) {
     this.taskList.splice(index,1);
+    this.buttonTextList.splice(index,1);
+    this.counterList.splice(index,1);
+    this.timeList.splice(index, 1);
   }
 
   onSubmit(){
@@ -54,7 +56,6 @@ export class ToDoComponent {
     this.buttonTextList[index] = 'Check-In';
     if(this.running){
       var counter = this.counterList[index];
-      this.timeListNums[index] = counter;
       const startTime = Date.now() - (counter || 0);
       this.timerRef = setInterval(() => {
         counter = Date.now() - startTime;
