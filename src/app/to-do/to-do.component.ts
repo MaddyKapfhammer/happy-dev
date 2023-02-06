@@ -40,8 +40,9 @@ export class ToDoComponent {
   onSubmit(){
     this.task = this.todoList.get('task')?.value;
     this.taskList.push(this.task);
-    this.timeEstimation = this.todoList.get('task')?.value;
-    this.priority = this.todoList.get('task')?.value;
+    this.timeEstimation = this.todoList.get('timeEstimation')?.value;
+    this.priority = this.todoList.get('priority')?.value;
+    console.log(this.priority);
   }
 
   timeConverter(milliseconds: number){
