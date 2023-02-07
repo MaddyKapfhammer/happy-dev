@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule, ReactiveFormsModule } from '@angular/forms'
-import { CdTimerModule } from 'angular-cd-timer';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TimeTrackerComponent } from './time-tracker/time-tracker.component';
@@ -23,7 +22,6 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    CdTimerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
