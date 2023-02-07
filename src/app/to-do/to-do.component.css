@@ -8,13 +8,20 @@
 .list{
   background-color: #aef6c7;
   width: 80%;
-  height: 100px;
+  height: 200px;
   text-align: center;
   position: relative;
   padding: 20px;
   display: inline-block;
   margin: 0 auto;
   border-bottom: none;
+  border-style: solid;
+}
+
+.singleTask{
+  background-color:#ef8354;
+  width: 75%;
+  text-align: center;
   border-style: solid;
 }
 
@@ -29,10 +36,33 @@
 }
 
 .taskBox{
-  width: 300px;
-  height: 60px;
-  padding: 20px;
+  width: 400px;
+  height: 40px;
+  padding: 10px;
   font-family: 'Montserrat', sans-serif;
+}
+
+.timeBox{
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+  margin-top: 8px;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.priorityLabel{
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.priority{
+  font-family: 'Montserrat', sans-serif;
+  width: 80px;
+  height: 20px;
+  font-size: 16px;
 }
 
 .tasks{
@@ -70,6 +100,30 @@
   margin-left: 8px;
   margin-right: 20px;
   font-size: 30px;
+}
+
+.taskCheckIn{
+  background-color: black;
+  font-family: 'Bebas Neue', cursive;
+  color: #edf7b5;
+  margin-top: 6px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 30px;
+  width: 80px;
+  float: left;
+}
+
+.taskCheckOut{
+  background-color: black;
+  font-family: 'Bebas Neue', cursive;
+  color: #edf7b5;
+  margin-top: 6px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 30px;
+  width: 80px;
+  float: left;
 }
 
 .row{

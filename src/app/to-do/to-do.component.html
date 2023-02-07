@@ -8,34 +8,36 @@
 <h2>What do you need to get done today?</h2>
 
 <div class="todo">
-	<div class="list">
-		<input [(ngModel)]="newTask" type="text"
-		value="" class="taskBox">
-		<button (click)="addToList()" class="task-btn">
-			Add Task
-		</button>
-	</div>
+	<form [formGroup]="todoList" (ngSubmit)="onSubmit()" class="list">
+    <input type="text" id="task" name="task" formControlName="task" placeholder="task" class="taskBox">
+    <br>
+    <input type="text" id="timeEstimation" name="timeEstimation" formControlName="timeEstimation" placeholder="time estimate" class="timeBox" >
+    <label for="priority" class="priorityLabel">Priority:</label>
+    <select name="priority" id="priority" formControlName="priority" class="priority">
+      <option value="high">High</option>
+      <option value="low">Low</option>
+    </select>
+    <br>
+    <button class="task-btn">Add Task</button>
+	</form>
 
   <div class="tasks">
-
-    <div *ngFor="let x of items; let index = index;"
-    class="row mt-1" style="height:100px;">
-
     <div class="Row">
-      <input (click)="deleteTask(index)" type="checkbox"
-      value="Done" class="done-check">
-
-      <div class="listed-task">{{x}}</div>
-
-      <input (click)="deleteTask(index)" type="button"
-        value="Delete" class="delete-btn">
+      <div *ngFor="let x of taskList; let index=index;"
+      class="row mt-1" style="height:100px;">
+        <div class="Row">
+          <input type="checkbox" (click)="deleteTask(index)" value="Done" class="done-check">
+          <div class="listed-task">{{x}}</div>
+          <button class="taskCheckIn" (click)="startTimer(index)">{{buttonTextList[index]}}</button>
+          <div *ngIf="timeText; else elseBlock">{{timeList[index]}}</div>
+          <ng-template #elseBlock></ng-template>
+          <button class="delete-btn" (click)="deleteTask(index)">Delete</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-
-
-<div class="footer">
+<!-- <div class="footer">
   <p>Thanks for visiting happy-dev!</p>
-</div>
+</div> -->
