@@ -15,7 +15,19 @@ h2{
   text-align: center;
 }
 
+p{
+  font-size: 20px;
+  text-align: center;
+  font-family:'Nunito Sans', sans-serif;
+}
 
+h3{
+  font-size: 30px;
+  font-family: 'Bebas Neue', cursive;
+  color: #df3b57;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
 
 .footer{
   position: fixed;
